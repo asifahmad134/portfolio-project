@@ -5,7 +5,26 @@
   line-height: 1.5;
   padding: 1rem;
 }
-
+@media only screen and (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+  }
+  header li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1px;
+  }
+  #skills,
+  #projects {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 /* NAV */
 header {
   display: flex;
@@ -52,9 +71,9 @@ header li a:hover {
   margin-top: -4rem;
 }
 .banner img {
-  width: 250px;
-  height: 250px;
-  border-radius: 250px;
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
 }
 /* About Me */
 #about-me {
